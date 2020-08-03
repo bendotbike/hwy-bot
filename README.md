@@ -11,7 +11,6 @@ $ python3 Main.py
 
 ## Installation (server)
 ```
-git clone https://github.com/bendotbike/hwy-bot.git /var/www/apps/hwy-bot
 $ git clone https://github.com/bendotbike/hwy-bot.git /var/www/apps/hwy-bot
 $ cd /var/www/apps/hwy-bot
 $ pip install requests python-twitter beautifulsoup
