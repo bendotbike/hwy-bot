@@ -4,8 +4,8 @@ Posts pictures of local interstates.
 
 ## Installation (linux server)
 ```
-$ git clone https://github.com/bendotbike/hwy-bot.git /var/www/apps/hwy-bot
-$ cd /var/www/apps/hwy-bot
+$ git clone https://github.com/bendotbike/hwy-bot.git /usr/share/pyshared/
+$ cd /usr/share/pyshared/
 $ pip install -r requirements.txt
 $ npm install pm2@latest -g
 $ touch .env #Make .env file like below
@@ -15,8 +15,8 @@ $ pm2 start Main.py --name hwybot --interpreter python3 --chron $chron_interval$
 
 ## Installation (client-side)
 ```
-$ git clone https://github.com/bendotbike/hwy-bot.git /var/www/apps/hwy-bo /var/www/apps/hwy-bot
-$ cd /var/www/apps/hwy-bot
+$ git clone https://github.com/bendotbike/hwy-bot.git /var/www/apps/hwy-bot /usr/share/pyshared/
+$ cd /usr/share/pyshared/
 $ pip install -r requirements.txt
 $ touch .env #Make .env file like below
 $ python Main.py
