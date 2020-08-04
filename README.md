@@ -23,7 +23,7 @@ $ sudo chmod 0755 /usr/local/bin/chromedriver
 $ npm install pm2@latest -g
 $ touch .env #Make .env file like below
 # Schedule bot to run under 'hwybot' name at a certain chron interval:
-$ pm2 start Main.py --name hwybot --interpreter python3 --chron $chron_interval$ # Schedules bot to run under 'hwybot' name at a certain chron interval
+$ pm2 start Main.py --name "hwybot" --interpreter python3 --cron "cron_pattern (use http://cron.guru or something)"
 ```
 
 ## .env file
