@@ -24,7 +24,9 @@ $ python Main.py
 
 ## .env file
 Register your Twitter account as a developer account on Twitter and get the following info for this file.
-Create in the same directory as you saved this repo.
+
+Create in the same directory as you saved this repo. ```$ touch .env```
+Be sure not to upgrade this file to version control.
 ```
 consumer_key="YOUR_CONSUMER_KEY"
 consumer_secret="YOUR_CONSUMER_SECRET"
