@@ -1,0 +1,64 @@
+{
+    "urls": [
+        {
+            "display_name": "I-24 w/o Seminole Dr",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.021358,-85.262919"
+        },
+        {
+            "display_name": "I-24 @ Seminole Dr",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.0206,-85.259839"
+        },
+        {
+            "display_name": "I-24 @ Old Ringgold Rd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421/?latlng=35.018232,-85.26852"
+        },
+        {
+            "display_name": "I-24 @ Westside Dr",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.01457,-85.271528"
+        },
+        {
+            "display_name": "I-24 e/o Market St",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.026037,-85.303066"
+        },
+        {
+            "display_name": "I-24 @ Rossvile Blvd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.018437,-85.294025"
+        },
+        {
+            "display_name": "I-24 @ Germantown Rd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.013573,-85.250907"
+        },
+        {
+            "display_name": "I-24 @ US-27 Junction",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.032387,-85.319416"
+        },
+        {
+            "display_name": "I-24 @ S Moore Rd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.008104,-85.236533"
+        },
+        {
+            "display_name": "I-24 e/o Moccasin Bend",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.023891,-85.32473"
+        },
+        {
+            "display_name": "I-24 @ McBrien Rd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.004823,-85.226966"
+        },
+        {
+            "display_name": "I-24 @ Moccasin Bend",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.018794,-85.334176"
+        },
+        {
+            "display_name": "I-24 WB @ I-75 Junction",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.00487,-85.2152"
+        },
+        {
+            "display_name": "I-24 e/o Spring Creek Rd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.003826,-85.215593"
+        },
+        {
+            "display_name": "I-24 w/o Lookout Creek",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.027565,-85.346731"
+        },
+    ]
+}

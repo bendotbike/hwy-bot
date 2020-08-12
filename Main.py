@@ -11,8 +11,9 @@ from JsonReader import JsonReader
 
 # Camera info
 
-# Gets us an image and saves it for our bots
-def getImage():
+# Gets us a random image and saves it for our bots
+# This is an old method. Used to be used when bot only posted random images
+def getRandomImage():
 
     # While loop, in case a camera is down, get another random camera and retry
     loop = True
@@ -30,7 +31,7 @@ def getImage():
 
         # Get random road
         print("Getting random road...")
-        reader = JsonReader("base_urls.json")
+        reader = JsonReader("json_file_here")
         randomCamera = reader.getRandomUrl()
         
         roadName = randomCamera["display_name"]
@@ -56,25 +57,52 @@ def getImage():
 
     return success
 
-
 # Main
 def main():
+
+    """ Highway 153 """
+
+    # Read through the highway json file
+    reader153 = JsonReader("urls/hwy153.json")
+    urls153 = reader153.getAllUrls()
+    saved153Images = []
+
+    # Get all iamges
+    count = 1
+    for item in urls153:
+        url = item["base_url"]
+        filename = "downloads/hwy153--" + str(count) + ".png"
+        displayName = item["display_name"]
+        result = WebScraper.save_image(url, filename)
+        if result[0]:
+            print("[Main]: Saved image #" + str(count))
+            saved153Images.append((displayName, filename))
+        else:
+            print("[Main]: Error on image #" + str(count))
+            saved153Images.append(("displayName", "error"))
+
+        count += 1
+
+    # Post all images in a thread
+    bot = Bot()
+
+    tweetId = bot.post_text("Highway 153")
+    for item in saved153Images:
+        if item[1] == "error":
+            tweetId = bot.post_text_as_response(item[0] + " - Camera down", tweetId)
+        else:
+            tweetId = bot.post_image_as_response(item[0], item[1], tweetId)
+
+
+    """ Interstate 24 """
+
+
+    """ Interstate 75 """
+
+
+    """ US 27 """
+
     
-    # Get image
-    result = getImage()
-    if result[0]:
-        print("Success")
-
-        
-    else:
-        print("Failure")
-
-    
-
-    # Post image with bot
-    Bot.init()
-    print(result[1] + ", " + result[2])
-    Bot.sendTweet(result[1], result[2])
 
 if __name__ == "__main__":
     main()

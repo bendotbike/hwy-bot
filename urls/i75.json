@@ -1,0 +1,17 @@
+{
+    "urls": [
+        {
+            "display_name": "I-75 @ I-24 Jct",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421/?latlng=35.004746,-85.211367"
+        },
+        {
+            "display_name": "I-75 @ I-24",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.001661,-85.211203",
+            "camera_url": ""
+        },
+        {
+            "display_name": "I-75 @ I-75/I-24 Jct",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.006755,-85.205195"
+        }
+    ]
+}

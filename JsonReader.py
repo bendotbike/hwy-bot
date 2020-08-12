@@ -1,6 +1,6 @@
 """
 JsonReader.py
-Responsible for reading JSON file containing baseUrls
+Responsible for reading JSON files containing baseUrls for speed cameras
 """
 
 # Imports
@@ -28,6 +28,9 @@ class JsonReader:
         pos = randint(1, size-1)
         return self.getItem(pos)
 
+    # Get all URLs
+    def getAllUrls(self):
+        return self.jsonParsed["urls"]
 
     # To string
     def toString(self):

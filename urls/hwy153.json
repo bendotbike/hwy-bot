@@ -1,0 +1,24 @@
+{
+    "urls": [
+        {
+            "display_name": "TN-153 @ Amnicola Hwy",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.090043,-85.219"
+        },
+        {
+            "display_name": "TN-153 s/o Chickamauga Dam",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.094817,-85.225564"
+        },
+        {
+            "display_name": "TN-153 @ TN-17",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.081353,-85.204859"
+        },
+        {
+            "display_name": "TN-153 @ Jersey Pike",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.065329,-85.1947"
+        },
+        {
+            "display_name": "TN-153 @ Shallowford Rd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.054355,-85.190561"
+        }
+    ]
+}

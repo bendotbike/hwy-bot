@@ -20,7 +20,7 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 from PIL import Image
 
-def save_image(baseUrl, fileName):
+def save_image(baseUrl, filePath):
     # Selenium config (Disable SSL checking so we don't get a ton of obnoxious errors, and make Selenium headless, disable logging)
     chromeOptions = webdriver.ChromeOptions()
     chromeOptions.add_argument("--headless")
@@ -30,35 +30,36 @@ def save_image(baseUrl, fileName):
     chromeOptions.add_argument("--ignore-ssl-errors")
     chromeOptions.add_argument("--allow-running-insecure-content")
     chromeOptions.add_argument("--ignore-certificate-errors-spki-list")
+    chromeOptions.add_argument("--icognito")
 
     driver = webdriver.Chrome(options=chromeOptions)
 
     url = baseUrl
 
     driver.get(url)
-    print("Scraping page for base image...")
+    print("[WebScraper]: Scraping page for base image...")
     try:
         imageLoaded = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "img[alt='Weather-Traffic Camera thumbnail']")))
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);") # Need this script to simulate user interaction on the page to let the page inject the image src
         time.sleep(2)
         html = driver.page_source
-        print("Success: found base image.")
+        print("[WebScraper]: Success - found base image.")
     except TimeoutException:
-        print("Error: TimeoutException while scraping for base image!")
+        print("[WebScraper]: Error - TimeoutException while scraping for base image!")
 
     driver.close()
-    print("Parsing out base image src...")
+    print("[WebScraper]: Parsing out base image src...")
     soup = BeautifulSoup(html, "html.parser")
     imageUrl = soup.find("img", alt="Weather-Traffic Camera thumbnail")["src"]
-    print("Succesfully grabbed image url. " + imageUrl)
+    print("[WebScraper]: Succesfully grabbed image url. (" + imageUrl + ")")
 
-    print("Writing image to file...")
+    print("[WebScraper]: Writing image to file...")
 
     try:
         img = Image.open(urlopen(imageUrl))
-        img.save("images/" + fileName)
-        print("Done. (Success)")
+        img.save(filePath)
+        print("[WebScraper]: Done. (Success!)")
         return "success"
     except:
-        print("Error - camera must be down")
+        print("[WebScraper]: Error - was unable to grab image from base url. Camera is probably down. This happens occasionally.")
         return "error"

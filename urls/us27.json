@@ -1,0 +1,36 @@
+{
+    "urls": [
+        {
+            "display_name": "US-27 s/o Martin Luther King Blvd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.044196,-85.314432"
+        },
+        {
+            "display_name": "US-27 n/o 4th St",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.054538,-85.31556"
+        },
+        {
+            "display_name": "US-27 @ W Main St",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.039597,-85.31836"
+        },
+        {
+            "display_name": "US-27 @ Manufacturers Rd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.062363,-85.318009"
+        },
+        {
+            "display_name": "US-27 @ Whitehall Rd - 1",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.070732,-85.321159"
+        },
+        {
+            "display_name": "US-27 s/o Signal Mountain Blvd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.082099,-85.323133"
+        },
+        {
+            "display_name": "US-27 n/o Signal Mountain Blvd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.091584,-85.324118"
+        },
+        {
+            "display_name": "US-27 n/o Signal Mountain Blvd",
+            "base_url": "https://www.weatherbug.com/traffic-cam/chattanooga-37421?latlng=35.091584,-85.324118"
+        }
+    ]
+}
